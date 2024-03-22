@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20rem;
+    background-color: #070606;
+    width: 100%;
+    position:fixed;
+    z-index: 1000;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.menu ul li{
+    list-style: none;
+    position: relative;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: rgb(249, 244, 244);
+    text-transform: uppercase;
+}
+.menu ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #fffcfc;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.menu ul li:hover:after{
+    width: 70;
+}
+#home{
+    width: 100%;
+    margin: 0 auto;
+}
+.banner{
+    background-image:linear-gradient(rgba(24, 23, 23, 0.632), rgba(12, 12, 12, 0.505)), url(mandem/hastag.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner-text{
+
+    text-align: center;
+    color: #fcf8f8;
+    padding-top: 180px;
+}
+.banner-text h1{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-size: 130px ;
+}
+.banner-text p{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+      font-size: 20px;
+      font-style: italic;
+}
+#contact{
+    width: 100%;
+    padding: 70px 0;
+}
+.title-text{
+    text-align: center;
+    padding-bottom: 70px;
+}
+.title-text p{
+    margin: 20;
+    font-size: 20px;
+    color: rgb(245, 242, 242);
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    text-align: center;
+}
+.title-text p::after{
+    content: '';
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(#efe8e8,#111010);
+    position: absolute;
+    top: -20px;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius:35px ;
+}
+.title-text h1{
+font-size: 50px;
+color: #fff;
+}
+body {
+	background-color: #f0f0f0;
+	font-family: Arial, sans-serif;
+}
+#contact{
+    background-image: linear-gradient(#0e0e0ea4, #0b0b0b5e), url(mandem/50.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+
+}
+
+.booking-form {
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10pxrgba(0, 0, 0, 0.1);
+	margin: 50px auto;
+	padding: 30px;
+	width: 50%;
+}
+
+.form-title {
+	color: #333;
+	font-size: 24px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.form-group {
+	margin-bottom: 20px;
+}
+
+label {
+	display: block;
+	font-size: 16px;
+	margin-bottom: 5px;
+}
+
+input[type="text"], input[type="time"], input[type="email"], input[type="Phone Number"] {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 10px;
+	width: 100%;
+}
+
+input[type="checkbox"] {
+	margin-right: 10px;
+}
+
+input[type="submit"] {
+	background-color: #4CAF50;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
